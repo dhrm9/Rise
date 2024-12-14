@@ -1,0 +1,143 @@
+.claim-form {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+.claim-input {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* Three equal columns */
+    gap: 30px;
+    /* Space between all rows and columns */
+}
+
+.form-group {
+    box-sizing: border-box;
+    min-width: 200px;
+    /* Set a minimum width for smaller screens */
+}
+
+/* Space between the first two form groups specifically */
+.form-container .form-group:nth-child(1),
+.form-container .form-container .form-group:nth-child(2) {
+    margin-bottom: 20px;
+    /* Add space below first two groups */
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+p {
+    font-size: 0.9em;
+    color: #666;
+    margin-top: 5px;
+}
+
+.dull-text {
+    color: #888;
+    /* Light gray color for a dull appearance */
+    font-weight: normal;
+    font-size: 0.8rem;
+    /* Optional: Slightly smaller font size */
+}
+
+/* Style for the highlighted-text line */
+.highlighted-text {
+    position: relative;
+    margin-bottom: 20px;
+    /* Add spacing below the heading */
+}
+
+.dull-text {
+    color: #999;
+    /* Makes "Approx 5 Minutes" duller */
+    font-weight: normal;
+}
+
+/* Add a blue line below the span */
+.highlight-line {
+    position: relative;
+}
+
+.highlight-line::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    /* Adjust spacing between text and line */
+    width: 100%;
+    /* Covers the entire text width */
+    height: 2px;
+    /* Line thickness */
+    background-color: #2f80ed;
+    /* Blue color for the line */
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 1200px) {
+    .form-container {
+        grid-template-columns: 1fr;
+        /* Stack form groups in a single column on small screens */
+        gap: 15px;
+        /* Adjust gap between rows */
+    }
+
+    .form-group {
+        min-width: 100%;
+        /* Ensure full width for each form group */
+    }
+
+    /* Remove margin between the first two groups for smaller screens */
+    .form-container .form-group:nth-child(1),
+    .form-container .form-group:nth-child(2) {
+        margin-bottom: 15px;
+        /* Adjust space for smaller screens */
+    }
+
+    /* Adjust input padding for small screens */
+    input,
+    select {
+        padding: 8px;
+    }
+
+    /* Adjust the font size for smaller screens */
+    label {
+        font-size: 1rem;
+    }
+
+    /* Ensure better visibility of dull text */
+    .dull-text {
+        font-size: 0.75rem;
+        /* Slightly smaller font for better visibility */
+    }
+
+    /* Adjust highlighted text and blue line */
+    .highlighted-text {
+        font-size: 1rem;
+        text-align: center;
+        /* Center-align text for smaller screens */
+    }
+
+    .highlight-line::after {
+        height: 1px;
+        /* Adjust line thickness for smaller screens */
+    }
+}

@@ -1,0 +1,17 @@
+.header {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    background-color: #fff;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.steps span {
+    margin-right: 15px;
+    color: #aaa;
+}
+
+.steps .active {
+    color: #2b2b2b;
+    font-weight: bold;
+}

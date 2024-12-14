@@ -1,0 +1,48 @@
+.sidebar {
+    background-color: #f7f9ff;
+    width: 220px;
+    height: 88vh;
+    padding: 20px;
+}
+
+.logo-upper {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.8rem;
+    color: #2b2b2b;
+    margin-bottom: 30px;
+    margin-left: 10px;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+}
+
+.menu li {
+    display: flex;
+    /* Align icon and text side by side */
+    align-items: center;
+    /* Vertically center the items */
+    margin: 15px 0;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.menu li svg {
+    margin-right: 10px;
+    /* Add space between icon and text */
+}
+
+.cta {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.cta img {
+    width: 80%;
+    margin-bottom: 10px;
+}
