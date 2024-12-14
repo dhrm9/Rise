@@ -5,12 +5,12 @@ import { HiOutlineClipboardDocumentList } from "react-icons/hi2";
 import { HiClipboardDocumentList } from "react-icons/hi2";
 
 const UploadSection = () => {
-  const [file1, setFile1] = useState(null); // Statement file
-  const [file2, setFile2] = useState(null); // Contract file
-  const [file3, setFile3] = useState(null); // Arbitration Agreement file
-  const [file4, setFile4] = useState(null); // Additional Contract file
+  const [file1, setFile1] = useState(null); 
+  const [file2, setFile2] = useState(null); 
+  const [file3, setFile3] = useState(null); 
+  const [file4, setFile4] = useState(null); 
 
-  // Handle file selection
+  
   const handleFileChange = (e, setFile) => {
     const selectedFile = e.target.files[0];
     if (selectedFile) {
@@ -33,7 +33,7 @@ const UploadSection = () => {
             Upload a PDF
           </button>
 
-          {/* Hidden file input for Statement */}
+         
           <input
             type="file"
             id="fileInput1"
@@ -63,7 +63,7 @@ const UploadSection = () => {
             >
               Choose File
             </button>
-            {/* Hidden file input for Contract */}
+            
             <input
               type="file"
               id="fileInput2"
@@ -85,7 +85,7 @@ const UploadSection = () => {
             >
               Choose File
             </button>
-            {/* Hidden file input for Arbitration Agreement */}
+            
             <input
               type="file"
               id="fileInput3"
@@ -115,7 +115,7 @@ const UploadSection = () => {
             >
               Upload the Contract
             </button>
-            {/* Hidden file input for Additional Documentation */}
+           
             <input
               type="file"
               id="fileInput4"

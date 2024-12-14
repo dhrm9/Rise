@@ -7,13 +7,11 @@
     padding: 20px;
     border-radius: 8px;
     flex-wrap: nowrap;
-    /* Prevent wrapping for large screens */
 }
 
 .upload-section>div {
     flex: 1;
     min-width: 280px;
-    /* Prevent divs from getting too narrow */
 }
 
 h4 {
@@ -36,7 +34,6 @@ h4 {
     background-color: #f9f9f9;
     box-sizing: border-box;
     padding: 20px;
-    /* Ensure padding is included in dimensions */
 }
 
 .upload-box button {
@@ -53,7 +50,6 @@ h4 {
     display: flex;
     gap: 15px;
     justify-content: space-between;
-    /* Ensure even spacing between items */
 }
 
 .upload-boxes .upload-box {
@@ -72,7 +68,6 @@ h4 {
     align-items: center;
     gap: 10px;
     justify-content: center;
-    /* Center content horizontally */
 }
 
 .upload-btn {
@@ -90,7 +85,6 @@ h4 {
     color: #2f80ed;
     cursor: pointer;
     border: none;
-    /* Ensure no border is applied */
     border-radius: 50%;
     width: 30px;
     height: 30px;
@@ -99,26 +93,21 @@ h4 {
     align-items: center;
 }
 
-/* Responsive Layout for Small Screens */
 @media (max-width: 1200px) {
     .upload-section {
         flex-wrap: wrap;
-        /* Allow wrapping for smaller screens */
         justify-content: center;
-        /* Center sections on smaller screens */
         gap: 20px;
     }
 
     .upload-section>div {
         flex: 1 1 100%;
-        /* Ensure sections take full width on smaller screens */
         min-width: 280px;
     }
 
     .upload-box {
         height: auto;
         padding: 20px;
-        /* Adjust height for content wrapping */
     }
 
     .additional-upload {

@@ -24,9 +24,7 @@
 
 .menu li {
     display: flex;
-    /* Align icon and text side by side */
     align-items: center;
-    /* Vertically center the items */
     margin: 15px 0;
     font-size: 1.1rem;
     cursor: pointer;
@@ -34,7 +32,6 @@
 
 .menu li svg {
     margin-right: 10px;
-    /* Add space between icon and text */
 }
 
 .cta {

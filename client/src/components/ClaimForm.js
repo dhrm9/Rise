@@ -4,7 +4,6 @@ import { IoLocationOutline, IoLanguageOutline } from "react-icons/io5";
 import { AiTwotoneCalculator } from "react-icons/ai";
 
 const ClaimForm = () => {
-  // State hooks for form data and validation
   const [claimValue, setClaimValue] = useState("");
   const [contractValue, setContractValue] = useState("");
   const [place, setPlace] = useState("");
@@ -16,7 +15,7 @@ const ClaimForm = () => {
     language: "",
   });
 
-  // Handle input changes
+  
   const handleClaimValueChange = (e) => {
     setClaimValue(e.target.value);
   };
@@ -33,7 +32,7 @@ const ClaimForm = () => {
     setLanguage(e.target.value);
   };
 
-  // Validate form before submitting or saving
+  
   const validateForm = () => {
     let formErrors = {};
     let isValid = true;
@@ -71,7 +70,7 @@ const ClaimForm = () => {
         </span>
       </h3>
 
-      {/* Wrapper for the three-column layout */}
+      
       <div className="form-container">
         <div className="form-group">
           <label>
@@ -86,10 +85,7 @@ const ClaimForm = () => {
             onChange={handleContractValueChange}
           />
 
-          {/* <span className="currency">USD</span>
-          {errors.contractValue && (
-            <small className="error">{errors.contractValue}</small>
-          )} */}
+          
 
           <small>Claim Value</small>
           <input
@@ -98,10 +94,7 @@ const ClaimForm = () => {
             value={claimValue}
             onChange={handleClaimValueChange}
           />
-          {/* <span className="currency">USD</span>
-          {errors.claimValue && (
-            <small className="error">{errors.claimValue}</small>
-          )} */}
+          
         </div>
 
         <div className="form-group">
